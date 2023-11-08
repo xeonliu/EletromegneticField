@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>工作特性</h2>
+      <p>带电粒子在磁场中运动的特殊性质，使得回旋加速器有许多便利的特性</p>
+      <h3>最大速度</h3>
+      通常而言，回旋加速器存在一个出口。带电粒子在加速后会从出口射出，这时粒子的速度即为最终加速的速度。
+      <p>
+        前面我们说到，产生过高的电压在技术上是很困难的，我们现在来看看回旋加速器是如何解决这一问题的
+      </p>
+      <section id="sim1" class="sim"></section>
+      <p>
+        改变电场强度大小，观察粒子离开回旋加速器时的数值速度大小，你有什么发现？
+      </p>
+      <p>可以看到，随着电磁场强度的增加，带电粒子的最大速度没有显著改变</p>
+      <p>
+        事实上，通过公式我们可以推导出
+        <math>
+          <mi>v</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mi>q</mi>
+              <mi>B</mi>
+              <mi>R</mi>
+            </mrow>
+            <mrow>
+              <mi>m</mi>
+            </mrow>
+          </mfrac>
+        </math>
+      </p>
+      <p>从公式可以看出，回旋加速器加速带电粒子的最大速度与电场强度大小无关</p>
+      <p>
+        由于磁感应强度一般数值较大，可以认为带电粒子运动时圆心基本与初始位置重合
+      </p>
+      <p>
+        则相同比荷的粒子在一定的磁感应强度下，最大速度只与回旋加速器半径有关，从而避免了对过大电场的需求
+      </p>
+      <a href="/pages/page15.html" class="btn btn-primary"
+        >但是，电场方向在不断改变，怎么控制它呢？</a
+      >
+      <!-- <section id="sim1"></section> -->
+      <script src="/js/matter.js"></script>
+      <script src="/js/p5.js"></script>
+      <script src="/js/arrow.js"></script>
+      <script src="/js/controller.js"></script>
+      <script src="/js/simblock.js"></script>
+      <script src="/js/default.js"></script>
+      <script src="/js/electircfield.js"></script>
+      <script src="/js/chargedparticle.js"></script>
+      <script src="/js/page14.js"></script>
+    </section>
+  </body>
+</html>

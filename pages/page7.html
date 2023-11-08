@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>匀强电场</h2>
+      <section>
+        <p>
+          如果电场中各点电场强度的大小相等方向相同，这个电场就叫做<b>匀强电场</b>。
+        </p>
+        <p>
+          带有等量异号电荷的一对平行金属板，如果两板相距很近，它们之间的电场，除边缘部分外，可以看做匀强电场。在两板的外面几乎没有电场。
+        </p>
+      </section>
+      <section class="sim">
+        <div class="slide">
+          <label for="intensity">
+            电场强度<math><mi>E</mi></math>
+          </label>
+          <input
+            type="range"
+            name="电场强度大小"
+            id="intensity"
+            min="-3"
+            max="3"
+            step="0.5"
+          />
+          <span id="E"></span>
+        </div>
+        <figure>
+          <div id="sim1"></div>
+          <figcaption>平行金属板间电场</figcaption>
+        </figure>
+      </section>
+      <h2>电场线</h2>
+      <section>
+        <p>
+          形象地了解和描述电场中各点电场强度的大小
+          和方向也很重要。法拉第采用了一个简洁的方法描述电场，
+          那就是画<b>电场线</b>。
+        </p>
+        <p>
+          电场线是画在电场中的一条条有方向的曲线，曲线上
+          每点的切线方向表示该点的电场强度方向。
+        </p>
+        <p>
+          在同一幅图中，电场强度较大的地方电场线较密，电场强度较小的地方电场线较疏：
+          因此在同一幅图中可以用电场线的疏密来比较各点电场强度的大小。
+        </p>
+        <p>现在让我们用电场线标识出前面我们遇到过的电场</p>
+        <section class="container-fluid">
+          <div class="row">
+            <section id="sim2" class="sim col"></section>
+            <section id="sim3" class="sim col"></section>
+          </div>
+        </section>
+      </section>
+      <a href="/pages/page8.html" class="btn btn-primary"
+        >现在我们再来看看带电粒子在电场中的基本运动形式
+      </a>
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page7.js"></script>
+  </body>
+</html>

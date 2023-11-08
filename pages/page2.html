@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>带电粒子</h2>
+      <section>
+        <p>
+          现在，真空中有一个静止的带电粒子（重力忽略不计）
+          点击模拟按钮，看看会发生什么？
+        </p>
+      </section>
+      <section class="multisim container row text-center">
+        <section class="col-sm">
+          <button id="btn1" value="off">启动模拟</button>
+          <figure class="text-center">
+            <div id="sim1"></div>
+            <figcaption>正电荷</figcaption>
+          </figure>
+        </section>
+
+        <section class="col-sm">
+          <button id="btn2" value="off">启动模拟</button>
+          <figure>
+            <div id="sim2"></div>
+            <figcaption>负电荷</figcaption>
+          </figure>
+        </section>
+      </section>
+      <section>
+        <p>好吧……似乎什么也没有发生</p>
+        <p>点电荷仍然保持静止，运动状态没有发生改变</p>
+        <p>
+          由牛顿第一定律我们知道，<b>力是改变物体运动状态的原因</b>。此处点电荷并未受力，当然应该保持静止
+        </p>
+      </section>
+      <a href="page3.html" class="btn btn-primary">如何使他们运动起来呢？</a>
+    </section>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page2.js"></script>
+  </body>
+</html>

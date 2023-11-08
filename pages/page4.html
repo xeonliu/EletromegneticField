@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <section>
+        <p>现在我们向环境中添加了某种电场</p>
+        <p>点击模拟按钮，看看会发生什么？</p>
+      </section>
+      <section class="sim">
+        <button id="btn1" value="off">启动模拟</button>
+        <div>
+          <label for="charge">
+            电荷量
+            <math><mi>q</mi></math>
+          </label>
+          <input
+            type="range"
+            id="charge"
+            min="-5"
+            max="5"
+            step="0.01"
+            value="2.5"
+          />
+          <span id="q"></span>
+        </div>
+        <figure>
+          <div id="sim1"></div>
+          <figcaption>在某电场中运动的带电粒子</figcaption>
+        </figure>
+      </section>
+      <section class="container text-center">
+        <p>带电粒子下落了</p>
+        <p>但是发生了什么？</p>
+        <p>电场在哪里？</p>
+      </section>
+      <a href="page5.html" class="btn btn-primary">化无形为有形……</a>
+    </section>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page4.js"></script>
+  </body>
+</html>

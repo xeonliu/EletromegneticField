@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h3>电场变化周期</h3>
+      <p>
+        在前面我们知道，在回旋加速器中，电场强度的方向是需要不断改变的。那么多久需要改变一次？这个时间是恒定的吗？
+      </p>
+      <p>
+        事实上，我们通过计算可以得到带电粒子在磁场中做圆周运动的周期为
+        <math>
+          <mi>T</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mi>2</mi>
+              <mi>π</mi>
+              <mi>m</mi>
+            </mrow>
+            <mrow>
+              <mi>q</mi>
+              <mi>B</mi>
+            </mrow>
+          </mfrac>
+        </math>
+        ，也就是说，电场每经过
+        <math>
+          <mfrac>
+            <mrow>
+              <mi>T</mi>
+            </mrow>
+            <mrow>
+              <mi>2</mi>
+            </mrow>
+          </mfrac>
+        </math>
+        就要改变一次方向，即电场的变化周期也为<math>
+          <mi>T</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mi>2</mi>
+              <mi>π</mi>
+              <mi>m</mi>
+            </mrow>
+            <mrow>
+              <mi>q</mi>
+              <mi>B</mi>
+            </mrow>
+          </mfrac>
+        </math>
+        （带电粒子通过电场的时间忽略不计）
+      </p>
+      <p>
+        注意到上式说明带电粒子在磁场中运动的周期与其速度无关，
+        也就是说，带电粒子在任意一侧磁场中运动的时间是恒定的，
+        电场的变化周期也是恒定的，这意味着我们可以采用频率恒定的交流电源驱动回旋加速器
+      </p>
+      <section id="sim1" class="sim"></section>
+      <p>
+        在上一节，我们知道最大速度
+        <math>
+          <mi>v</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mi>q</mi>
+              <mi>B</mi>
+              <mi>R</mi>
+            </mrow>
+            <mrow>
+              <mi>m</mi>
+            </mrow>
+          </mfrac>
+        </math>
+        ，也就是说，在维持仪器体积一定的情况下，我们只要不断提高磁感应强度就可以增大最大速度了。难道说最终速度没有上限吗？
+      </p>
+      <p>
+        然而，注意到电场变化周期与带电粒子质量有关。
+        由于相对论效应，粒子速度增大时，质量会增大，在磁场中的周期变长，使得交流电电压很难与在磁场中运动同步，因而带电粒子不能被无限加速。
+      </p>
+      <section id="sim2" class="sim"></section>
+      <a href="/pages/page16.html" class="btn btn-primary">好复杂……</a>
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page15.js"></script>
+  </body>
+</html>

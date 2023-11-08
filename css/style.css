@@ -1,0 +1,83 @@
+body {
+    /* background-color: antiquewhite; */
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainwindow {
+    background-color: antiquewhite;
+    /* border: 5px solid; */
+    border-radius: 1em;
+    padding: 40px;
+    margin: 40px;
+    min-height: 300px;
+    min-width: 400px;
+    max-width: 800px;
+    /* max-height: 600px; */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+a {
+    display: block;
+    align-items: center;
+}
+
+dl {
+    text-align: center;
+}
+
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0;
+}
+
+blockquote footer {
+    text-align: right;
+}
+
+/* .multisim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.sim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.sim button {
+    margin: 10px;
+}
+
+.sim span {
+    width: 4em;
+    text-align: center;
+}
+
+.sim .slide {
+    display: flex;
+}
+
+figure figcaption {
+    text-align: center;
+    font-size: 20%;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: serif;
+    margin-top: 0;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>带电粒子的加速</h2>
+      <div class="container-fluid text-center">
+        <div class="row">
+          <section id="sim1" class="sim"></section>
+          <section class="formula">
+            <p>
+              由电场力公式：
+              <math>
+                <mi>F</mi>
+                <mo>=</mo>
+                <mi>E</mi>
+                <mi>q</mi>
+              </math>
+            </p>
+            由牛顿第二定律：
+            <p>
+              <math>
+                <mi>F</mi>
+                <mo>=</mo>
+                <mi>m</mi>
+                <mi>a</mi>
+              </math>
+            </p>
+            <p>
+              联立解得
+              <math>
+                <mi>a</mi>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <mi>E</mi>
+                    <mi>q</mi>
+                  </mrow>
+                  <mrow>
+                    <mi>m</mi>
+                  </mrow>
+                </mfrac>
+              </math>
+            </p>
+            <p>
+              又
+              <math>
+                <mmultiscripts>
+                  <mi>v</mi>
+                  <mrow></mrow>
+                  <mi>2</mi>
+                </mmultiscripts>
+                <mo>=</mo>
+                <mi>2</mi>
+                <mi>a</mi>
+                <mi>x</mi>
+              </math>
+            </p>
+            <p>
+              则
+              <math>
+                <mi>v</mi>
+                <mo>=</mo>
+                <msqrt>
+                  <mfrac>
+                    <mrow>
+                      <mi>2</mi>
+                      <mi>E</mi>
+                      <mi>q</mi>
+                      <mi>x</mi>
+                    </mrow>
+                    <mrow>
+                      <mi>m</mi>
+                    </mrow>
+                  </mfrac>
+                </msqrt>
+              </math>
+            </p>
+          </section>
+        </div>
+      </div>
+      <p>
+        则一个质量为<math> <mi>m</mi> </math>,带正电荷<math> <mi>q</mi> </math>
+
+        的粒子，在静电力作用下由静止开始从正极板向负极板运动，其中两板间距为
+
+        <math>
+          <mi>x</mi>
+        </math>
+
+        ，它到达负极板时的速度与电场强度的二次根号成正比
+      </p>
+      <section id="sim2" class="sim"></section>
+      <p>同理，它到达负极板时的速度与板间距离的二次根号成正比</p>
+      <a href="/pages/page9_1.html" class="btn btn-primary">带电粒子的偏转</a>
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page9.js"></script>
+  </body>
+</html>

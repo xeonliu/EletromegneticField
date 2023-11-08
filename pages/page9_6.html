@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>运动电荷在磁场中受到的力</h2>
+      <p>运动电荷在磁场中受到的力 称为洛伦兹力(L,orentz.force)。</p>
+      <h3>洛伦兹力的方向和大小</h3>
+      <p>
+        运 动的带电粒子在磁场中所受洛伦兹力的方向，与运动方向
+        和磁感应强度的方向都垂直，它的指向可以依照左手定则
+        判定：伸开左手，使拇指与其余四个手指垂直，并且都与
+        手掌在同一个平面内：让磁感线从掌心进入，并使四指指
+        向正电荷运动的方向，这时拇指所指的方向就是运动的正
+        电荷在磁场中所受洛伦兹力的方向。负电荷受力的方向与正电荷受力的方向相反
+      </p>
+      <section id="sim1" class="sim"></section>
+      <!-- <section id="sim2"></section> -->
+
+      <p class="mainjax-enabled">
+        电荷量为
+        <math>
+          <mi>q</mi>
+        </math>
+        的粒子以速度运动时，如果速度方向与磁感应强度方向垂直，那么粒子受到的洛伦兹力为
+
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <mi>F</mi><mo>=</mo><mi>q</mi><mi>v</mi><mi>B</mi>
+        </math>
+      </p>
+      <a href="/pages/page10.html" class="btn btn-primary">再看看运动规律！</a>
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page9_6.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+    <!-- <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+              inlineMath: [['\\(','\\)']],
+              displayMath: [['$$','$$']],
+              processClass: "mathjax-enabled"
+          }
+      });
+    </script>
+    <script
+      type="text/javascript"
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script> -->
+    <!-- <script type="text/javascript" async src="/js/mathjax.js"></script> -->
+  </body>
+</html>

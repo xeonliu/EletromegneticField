@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>改变电荷量</h2>
+      <section id="sim1" class="sim"></section>
+      <section>
+        <p>可以看到，当电场强度不变时，带电粒子受力大小与电荷量正相关</p>
+        <p>
+          我们推测，试探电荷在电场中某点收到的力
+          <math><mi>F</mi></math>
+          很可能与试探电荷的电荷量
+          <math><mi>q</mi></math>
+          成正比，即
+          <math>
+            <mi>F</mi>
+            <mo>=</mo>
+            <mi>E</mi>
+            <mi>q</mi>
+          </math>
+        </p>
+        <p>
+          实验表明，我们的推测是正确的：试探电荷在电场中某个位置所受的力，的确与试探电荷的电荷量成正比。
+        </p>
+      </section>
+      <h2>改变电场强度</h2>
+      <p>
+        一些实验表明，在电场的不同位置，比例常数
+        <math><mi>E</mi></math>
+        一般来说是不一样的，它反映了电场在这一点的性质，叫做电场强度
+      </p>
+
+      <section id="sim2" class="sim">
+        <!-- <button>启动模拟</button>
+
+        <figure>
+          <div></div>
+          <figcaption></figcaption>
+        </figure> -->
+      </section>
+      <section>
+        <p>可以看到，当电荷量不变时，带电粒子受力大小和方向与电场强度相关</p>
+        <p>
+          物理学中规定，电场中某点电场强度的方向与正电荷在该点所受静电力的方向相同
+        </p>
+      </section>
+      <a href="page7.html" class="btn btn-primary">下面介绍一种特殊的电场</a>
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page6.js"></script>
+  </body>
+</html>

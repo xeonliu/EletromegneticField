@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>带电粒子的偏转</h2>
+      <p>
+        在真空中放置一对金属板，把两板接到电源上，于是两板间出现了电场。现有一个带电粒子射入电场，它收到的静电力的方向与速度方向不一致，因而发生偏转
+      </p>
+      <section id="sim1" class="sim"></section>
+      <p>
+        电子在垂直于板面的方向受到静电力。由于电场不随时间改变，而且是匀强电场，所以整个运动在垂直于板面的方向上加速度是不变的
+      </p>
+      <p>这种运动类似于重力场中的平抛运动</p>
+      <section id="sim2" class="sim"></section>
+      <p>
+        不过，重物在重力场中受到的力跟质量成正比，因此不同质量的物体具有相同的加速度g。但是带电粒子在电场中受到的力跟它的电荷量成正比，而电荷量相同的粒子可能质量不同，因而它们在电场中的加速度可能互不相同，这是静电场与重力场的重要区别。
+      </p>
+      <a href="/pages/page9_2.html" class="btn btn-primary"
+        >理论介绍完毕，查看应用</a
+      >
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/deflection.js"></script>
+  </body>
+</html>

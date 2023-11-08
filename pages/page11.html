@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainwindow">
+      <h2>质谱仪</h2>
+      <p>
+        一个质量为m、电荷量为q的粒子，从容器
+        A下方的小孔S,飘入电势差为U的加速电场，其初速度几
+        乎为0，然后经过S,沿着与磁场垂直的方向进入磁感应强
+        度为B的匀强磁场中，最后打到照相底片D上
+      </p>
+      <section id="sim1" class="sim"></section>
+      <p>
+        从这个结果可以看出，如果容器A中粒子的电荷量相同而质量不同，它们进人磁场后
+        将沿着不同的半径做圆周运动，因而打到照相底片的不同地方，如图3.64中的D。这样的
+        仪器叫做质谱仪。从粒子打在底片上的位置可以测出圆周的半径：进而可以算出粒子的比
+        荷是或算出它的质量。
+      </p>
+
+      <figure>
+        <img
+          src="/assets/Mass_spectrometer_schematics.png"
+          alt="mass_spectrometer"
+          class="rounded mx-auto d-block"
+        />
+        <figcaption>
+          质谱仪结构简图（该图展示了二氧化碳中碳同位素的测量）
+        </figcaption>
+      </figure>
+      <p>
+        质谱仪最初是由汤姆生的学生阿斯顿设计的，他用质谱仪发现了氖20和氖22，证实了
+        同位素的存在。质谱仪是一种精密仪器，是测量带电粒子的质量和分析同位素的重要工具。
+      </p>
+      <figure>
+        <img
+          src="/assets/Early_Mass_Spectrometer_(replica).jpg"
+          alt=""
+          width="100%"
+          class="rounded"
+        />
+        <figcaption>
+          阿斯顿发明的第三代质谱仪（仿制件）（拍摄者：Jeff Dahl）
+        </figcaption>
+      </figure>
+      <a href="/pages/page12.html" class="btn btn-primary">还有别的应用么？</a>
+    </section>
+    <script src="/js/matter.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/arrow.js"></script>
+    <script src="/js/controller.js"></script>
+    <script src="/js/simblock.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/electircfield.js"></script>
+    <script src="/js/chargedparticle.js"></script>
+    <script src="/js/page11.js"></script>
+  </body>
+</html>
