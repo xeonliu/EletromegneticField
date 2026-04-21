@@ -2,10 +2,30 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 
 const LESSON_PAGES = [
-  "page1","page2","page3","page4","page5","page6","page7","page8","page9",
-  "page9_1","page9_2","page9_3","page9_4","page9_5","page9_6",
-  "page10","page11","page12","page13","page14","page15","page16",
+  "page1",
+  "page2",
+  "page3",
+  "page4",
+  "page5",
+  "page6",
+  "page7",
+  "page8",
+  "page9",
+  "page9_1",
+  "page9_2",
+  "page9_3",
+  "page9_4",
+  "page9_5",
+  "page9_6",
+  "page10",
+  "page11",
+  "page12",
+  "page13",
+  "page14",
+  "page15",
+  "page16",
 ];
+const PAGE_PATH_PATTERN = /\/pages\/(page[\d_]+)\.html$/;
 
 const getPageFromHash = () => {
   const hash = window.location.hash.replace("#", "");
@@ -50,11 +70,13 @@ function App() {
     if (!iframeRef.current) return;
     try {
       const path = iframeRef.current.contentWindow.location.pathname || "";
-      const matched = path.match(/\/pages\/(page[\d_]+)\.html$/);
+      const matched = path.match(PAGE_PATH_PATTERN);
       if (matched && LESSON_PAGES.includes(matched[1]) && matched[1] !== currentPage) {
         setCurrentPage(matched[1]);
       }
-    } catch (_) {}
+    } catch (_) {
+      // iframe 同源访问在某些浏览器策略下可能失败，这里忽略同步失败即可。
+    }
   };
 
   return (
